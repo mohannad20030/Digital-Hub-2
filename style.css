@@ -1,0 +1,752 @@
+body {
+    font-family: proxima-nova, sans-serif;
+}
+
+p {
+    letter-spacing: 0.04em;
+}
+
+h1 {
+    font-size: 36.5px;
+}
+
+#sec2 {
+    background-color: #f7f3fa;
+}
+
+#sec5 {
+    margin-top: -100px;
+        margin-bottom: -259px;
+}
+
+/*  HERO SECTION  */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* at least as tall as the screen. If your browser window is 800 pixels tall, 100vh is approximately 800 pixels tall. */
+    overflow: hidden;
+    /* Hides content extending outside the section */
+    z-index: 0;
+    /* creates its own layer, so the image can sit behind the content */
+    color: white;
+}
+
+
+
+
+/* The background images */
+.hero-bg,
+.hero-bg2 {
+    position: absolute;
+    width: 100%;
+    /* full width of the section */
+    height: 100%;
+    /* full height of the section */
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    /* sticks to the top edge of the section */
+    left: 0;
+    /* sticks to the left edge of the section */
+
+    background-color: #f6f2f9;
+}
+@media (max-width: 800px) {
+
+#img-fluid1 {   
+    display: none;
+}
+
+}
+
+@media (max-width: 800px) {
+
+.hero {
+min-height: 88vh;
+
+}
+#cards2{
+
+display: none;
+}
+#img-logo-p{
+
+    display: none;
+
+}
+
+}
+
+
+@media (min-width: 800px) {
+
+
+#logo-hero{
+
+display: none;
+
+}
+
+#img-fluid2{
+display: none;
+
+
+}
+
+
+}
+
+
+.nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+/* Yellow "Sign in" button */
+.btn-signin {
+    background-color: #FFBC51;
+    color: white;
+    font-weight: 600;
+    width: 130px;
+    height: 42px;
+    transition: transform 0.2s ease;
+}
+
+.btn-signin:hover {
+    transform: translateY(-3px);
+    background-color: #FFBC51;
+    color: white;
+}
+
+/*  HERO CONTENT  */
+.hero-content {
+    padding-top: 40px;
+    /* space between the navbar and the headline */
+    padding-bottom: 80px;
+    /* space at the bottom of the hero */
+}
+
+.hero-title {
+    font-weight: 800;
+    color: white;
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: white;
+    padding: 30px 10px;
+}
+
+.btn-start {
+    background-color: #889dea;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    padding: 14px 48px;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    transition: transform 0.2s ease;
+}
+
+.btn-start:hover {
+    background-color: #6f83c8;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.feature-card {
+    position: relative;
+    overflow: hidden;
+    padding: 40px !important;
+    width: 96%;
+}
+
+.alignitems{
+align-items: start !important;
+
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00d2ff, #7928ca);
+    /* Cyan to Purple gradient */
+}
+
+
+
+
+/* Push the second column upward on large screens */
+@media (min-width: 992px) {
+    .staggered-column  {
+        transform: translateY(60px);
+    }
+    .staggered-column2{
+     transform: translateY(150px);
+
+    }
+
+    .cta-card {
+        gap: 100px;
+        /* bigger space between the title and the button */
+    }
+}
+
+/* Reset the position on smaller screens */
+@media (max-width: 991.98px) {
+    .staggered-column {
+        transform: none;
+    }
+}
+
+#txt11 {
+    font-weight: bold;
+    font-size: 12.7px;
+    line-height: 128.6%;
+    color: #E23434;
+    padding-left: 200px;
+}
+
+#p11 {
+    color: gray;
+    padding-left: 200px;
+    font-size: 15px;
+}
+
+#bbt {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #5c0e62;
+    padding-left: 200px;
+}
+
+#h11 {
+    color: gray;
+    padding-left: 200px;
+}
+
+#txt22 {
+    font-weight: bold;
+    font-size: 12.7px;
+    line-height: 128.6%;
+    color: #E23434;
+}
+
+#p22 {
+    color: gray;
+    font-size: 15px;
+}
+
+#btn22 {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #5c0e62;
+    padding-left: 10px;
+}
+
+#h22 {
+    color: gray;
+}
+
+/*  ---------TESTIMONIAL SECTION */
+.testimonial {
+    position: relative;
+    /* lets the image testimonial-bg be positioned inside this section */
+    overflow: hidden;
+    /* hides any part of the image that goes outside the section */
+    z-index: 0;
+    /* own layer, so the image can sit behind the content */
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 320px !important;
+}
+
+/* ----------- BACKGROUND IMAGE */
+.testimonial-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+    /* sends the image behind the text */
+}
+.testimonial-bg2 {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    /* sends the image behind the text */
+}
+/* ----- LEFT SIDE */
+.testimonial-title {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    /* space between letters, like the design */
+    line-height: 1.5;
+    /* space between the two lines */
+    margin-bottom: -167px;
+    /* space below the title */
+}
+
+.highlight {
+    color: #591567;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: 194px;
+    margin-bottom: -78px;
+}
+.testimonial-main {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-top: 2px;
+}
+
+/* --------- RIGHT SIDE */
+.testimonial-box {
+    min-height: 460px;
+}
+
+.testimonial-main {
+    max-width: 300px;
+    /* width of the main testimonial block */
+}
+
+/* ----- AVATARS */
+.avatar-1,
+.avatar-2,
+.avatar-3,
+.avatar-4 {
+    position: absolute;
+    /* placed freely inside the right column */
+}
+
+.avatar-main {
+    width: 180px;
+    /* width and height must be equal to make a circle */
+    height: 180px;
+}
+
+.testimonial-name {
+    color: #FFBC51;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+/* Job title "CEO at Softpanda" */
+.testimonial-job {
+    color: #FFBC51;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.hero-bg2-1{
+position: absolute;
+object-fit: cover;
+width: 100%;
+object-position: bottom;
+z-index: -1;
+margin-top: 435px;
+}
+.avatar-1 {
+    width: 160px;
+    height: 160px;
+    top: -13%;
+    right: -9%;
+}
+
+/* top right, the biggest small one */
+.avatar-2 {
+    width: 140px;
+    height: 140px;
+   top: 40%;
+    right: 3%;
+}
+
+/* middle right */
+.avatar-3 {
+    width: 140px;
+    height: 140px;
+    bottom: -32%;
+    left: 33%;
+}
+
+/* bottom center */
+.avatar-4 {
+    width: 100px;
+    height: 100px;
+   bottom: -17%;
+    right: 8%;
+}
+
+/* bottom right, the smallest */
+
+@media (max-width: 991.98px) {
+    .testimonial {
+        padding-top: 280px;
+        /* less space above on small screens */
+        padding-bottom: 120px;
+        /* less space below */
+        margin-top: 186px;
+        padding-top: 368px;
+
+
+    }
+
+    .testimonial-box {
+        min-height: auto;
+        /* no extra height needed, because the small avatars are hidden */
+        margin-top: 168px;
+        margin-bottom: -91px;
+
+    }
+}
+
+/* ===== WHITE CARD SECTION ===== */
+.cta {
+    position: relative;
+    /* needed so z-index works */
+    z-index: 1;
+    /* puts this section above the testimonial section */
+    margin-top: -120px;
+    /* negative margin pulls the section UP, so the card overlaps the testimonial section */
+    background: linear-gradient(to bottom, transparent 120px, #240a38 120px);
+    /* a gradient with a hard edge: the first 120px are see-through (you see the testimonial behind it),
+       and everything below is dark purple. 120px matches the negative margin above, so the dark part
+       starts exactly where the testimonial ends */
+}
+
+.cta-card {
+    position: relative;
+    /* frame for the blob */
+    z-index: 0;
+    /* own layer, so the blob (z-index: -1) stays above the white background but behind the text */
+    background-color: white;
+    /* white card */
+    border-radius: 10px;
+    /* rounded corners */
+    padding: 60px 24px;
+    /* 60px above and below, 24px left and right */
+    gap: 24px;
+    /* space between the title and the button */
+}
+
+/* Light blob inside the card */
+.cta-blob {
+    position: absolute;
+    /* placed freely inside the card */
+    top: 20px;
+    /* distance from the top of the card */
+    left: 10%;
+    /* distance from the left of the card */
+    width: 108px;
+    /* blob width */
+    height: 108px;
+    /* blob height */
+    background-color: #F7F3FA;
+    /* very light lavender */
+    border-radius: 60% 40% 45% 55% / 55% 50% 50% 45%;
+    /* different curves on each corner make an organic shape, not a circle */
+    z-index: -1;
+    /* behind the title */
+}
+
+/* Title: "What Are You Waiting For?" */
+.cta-title {
+    color: #4a4150;
+    /* dark gray-purple for the first words */
+    font-size: clamp(1.5rem, 2.5vw, 2.875rem);
+    /* clamp(min, flexible, max): 24px on phones, grows with the screen, max 46px */
+    font-weight: 700;
+    /* bold */
+    letter-spacing: 1px;
+    /* space between letters, like the design */
+}
+
+/* Yellow "Try Blinqpay" button */
+.btn-try {
+    background-color: #FFBC51;
+    /* yellow */
+    color: white;
+    /* text color */
+    font-weight: 600;
+    /* semi-bold */
+    letter-spacing: 0.5px;
+    /* small space between letters */
+    padding: 20px 76px;
+    /* 20px above/below, 76px left/right: makes the button about 250px wide */
+    border-radius: 4px;
+    /* slightly rounded corners */
+    box-shadow: 0 18px 20px -12px #FFBC51;
+    /* yellow glow under the button; the negative last number shrinks the shadow so it only shows below */
+    transition: transform 0.2s ease;
+    /* smooth hover movement */
+}
+
+.btn-try:hover {
+    transform: translateY(-3px);
+    /* move up 3px */
+    background-color: #ffb93b;
+    /* keep the yellow (Bootstrap would change it) */
+    color: white;
+    /* keep the text white */
+}
+
+/* ----- FOOTER */
+.site-footer {
+    background-color: #240a38;
+    /* dark purple, the same as the dark part of .cta, so they look like one block */
+    color: #8a7a95;
+    /* soft gray-purple text */
+    padding: 100px 0 40px;
+    /* top, horizontal, and bottom spacing */
+}
+
+/* Footer logo */
+.footer-logo {
+    width: 250px;
+    /* logo width */
+    max-width: 100%;
+    /* never wider than its column on small screens */
+    margin-bottom: 64px;
+    /* space between the logo and the social icons */
+}
+
+/* Social icons */
+.social {
+    gap: 38px;
+    /* space between the icons */
+}
+
+/* Copyright block */
+.footer-copy {
+    letter-spacing: 1px;
+    /* space between letters */
+    line-height: 2;
+    /* space between the two lines */
+    font-weight: 500;
+    /* medium weight */
+}
+
+.footer-copy i {
+    font-size: 1.3rem;
+    /* size of the © icon */
+    line-height: 1.5;
+    /* aligns the icon with the first line of text */
+}
+
+/* Column titles: Services, Product, Company */
+.footer-heading {
+    color: white;
+    /* white */
+    font-size: 1rem;
+    /* 16px */
+    font-weight: 700;
+    /* bold */
+    letter-spacing: 1px;
+    /* space between letters */
+    padding-top: 12px;
+    /* lines the titles up with the middle of the logo */
+    margin-bottom: 56px;
+    /* space between the title and the first link */
+}
+
+/* Links */
+.footer-links li {
+    margin-bottom: 23px;
+}
+
+.footer-links a {
+    color: #8a7a95;
+    /* soft gray-purple text */
+    font-size: 1rem;
+    /* 16px */
+    font-weight: 500;
+    /* medium weight */
+    letter-spacing: 1px;
+    /* space between letters */
+    text-decoration: none;
+    /* removes the underline */
+}
+
+.footer-links a:hover {
+    color: white;
+    /* white on hover */
+}
+
+/* ===== PHONES AND TABLETS (narrower than 992px) ===== */
+@media (max-width: 991.98px) {
+    .site-footer {
+        padding-top: 120px;
+        /* less space under the card on small screens */
+    }
+}
+
+/* Remove Bootstrap's bottom padding from elements using py-5 */
+.py-5 {
+    padding-bottom: 0 !important;
+}
+
+/* ===== LARGE SCREENS (992px and wider) ===== */
+@media (min-width: 992px) {
+    .cta-card {
+        gap: 100px;
+        /* bigger space between the title and the button */
+    }
+}
+
+.site-footer {
+    padding-top: 100px;
+    /* less space under the card on small screens */
+}
+
+/* ===== PHONES AND TABLETS (narrower than 992px) ===== */
+@media (max-width: 991.98px) {
+    .site-footer {
+        padding-top: 120px;
+        /* less space under the card on small screens */
+    }
+}
+
+.py-5 {
+    padding-bottom: 0 !important;
+
+}
+
+
+@media (max-width: 800px) {
+
+    .site-footer {
+        text-align: center;           /* centers all the text inside the footer (headings, links, copyright) */
+    }
+
+    .footer-logo {
+        display: block;               /* an image is inline by default; block lets auto margins work */
+        margin-left: auto;            /* auto margins on both sides center the logo... */
+        margin-right: auto;           /* ...inside its column */
+    }
+
+    .social {
+        justify-content: center;      /* centers the icons inside the d-flex row */
+    }
+
+    .footer-copy {
+        justify-content: center;      /* centers the © icon and the text as one group */
+        text-align: center;           /* centers the two lines of text inside the paragraph */
+    }
+}
+
+
+@media (max-width: 991.98px) {
+
+    /* 1. Sections: no longer a full screen tall, with equal space above and below */
+    #sec2, #sec3, #sec4, #sec5 {
+        min-height: auto;                 /* overrides .hero's min-height: 100vh; the height now follows the content */
+        padding-top: 40px !important;     /* space above the content */
+        padding-bottom: 40px !important;  /* space below; !important beats your .py-5 rule */
+    }
+
+    /* Sections 3 to 5 have no container, so we add side space ourselves */
+    #sec3, #sec4, #sec5 {
+        padding-left: 16px;               /* keeps the text from touching the screen edge */
+        padding-right: 16px;
+    }
+
+    /* Smaller gap between the stacked columns (Bootstrap's g-5 is 48px) */
+    #sec3 > .row, #sec4 > .row, #sec5 > .row {
+        --bs-gutter-y: 1.5rem;            /* a variable Bootstrap uses for the vertical gap */
+    }
+
+    /* 2. THE MAIN IDEA: the text block is centered on the page, but the text inside stays left-aligned */
+    .section-text {
+        max-width: 440px;                 /* limits the block width, so it doesn't stretch across a tablet */
+        margin-left: auto;                /* auto margins on both sides center the block... */
+        margin-right: auto;               /* ...in the middle of the page */
+        text-align: left;                 /* the text inside stays on the left */
+    }
+
+    /* 3. Images: centered, and never wider than the screen */
+    .section-img {
+        text-align: center;               /* centers the image inside its column */
+    }
+
+    .section-img img {
+        max-width: 100%;                  /* the image shrinks to fit small screens */
+        height: auto;                     /* keeps the proportions */
+    }
+
+    /* 4. Remove the 200px left padding that was for desktop */
+    #txt11, #h11, #bbt, #btn22 {
+        padding-left: 0;                  /* text starts at the left edge of the block */
+    }
+
+    /* The paragraphs had 30px 10px padding from .hero-text; 10px 0 lines them up with the headings */
+    #p11, #p22, #sec2 .hero-text {
+        padding: 10px 0;
+    }
+
+    /* Section 2's "Learn more" link has an inline padding-left, so we need !important to override it */
+    #sec2 .section-text a {
+        padding-left: 0 !important;
+    }
+
+    /* 5. Smaller headlines (the desktop size is 55px) */
+    #sec2 .hero-title, #sec3 .hero-title, #sec4 .hero-title, #sec5 .hero-title {
+        font-size: 36px;
+    }
+
+    /* 6. Section 3: remove the inline padding-top: 100px on its row */
+    #sec3 > .row {
+        padding-top: 0 !important;
+    }
+
+    /* 7. Section 2: the image (shown instead of the cards) is centered, but the cards and text stay left-aligned */
+    #sec2 .container {
+        text-align: center;               /* centers the image */
+    }
+
+    #sec2 .cards-col, #sec2 .section-text {
+        text-align: left;                 /* text inside the cards and the text block stays left */
+    }
+
+    /* 8. Hide the decorative blobs: their inline margins are made for desktop.
+          !important is needed because Bootstrap's d-md-block also uses !important */
+    #sec2 .cta-blob, #sec3 .cta-blob, #sec4 .cta-blob, #sec5 .cta-blob {
+        display: none !important;
+    }
+
+    /* 9. Section 5: remove the negative margins that overlap the next section,
+          and remove the testimonial's extra top margin that compensated for them */
+    #sec5 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .testimonial {
+        margin-top: 0;                    /* if the gap above the testimonial is too big or small, change this one value */
+    }
+}
